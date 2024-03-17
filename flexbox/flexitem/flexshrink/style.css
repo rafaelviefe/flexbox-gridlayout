@@ -1,50 +1,61 @@
-
-.flex-start {
-	justify-content: flex-start;
-}
-
-.flex-end {
-	justify-content: flex-end;
-}
-
-.center {
-	justify-content: center;
-}
-
-.space-between {
-	justify-content: space-between;
-}
-
-.space-around {
-	justify-content: space-around;
-}
-
-/* Flex Container */
-.container {
-	max-width: 420px;
-	margin: 0 auto;
+body{
+    width: 99%;
+    height: 120vh;
+	text-align: center;
 	display: flex;
-	border: 1px solid #ccc;
-}
-
-.column {
-	min-height: 200px;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.shrink-1 {
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
-/* Flex Item */
+.shrink-3 {
+	flex-grow: 1;
+	flex-shrink: 3;
+}
+
+.shrink-1-basis {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 150px;
+}
+
+.shrink-0-basis {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 150px;
+}
+
+.shrink-3-basis {
+	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 150px;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+
 .item {
 	margin: 5px;
-	padding: 0 10px;
 	background: tomato;
 	text-align: center;
 	font-size: 1.5em;
 }
 
-/* Indica que o conteúdo deve se expandir */
-.flex {
-	flex: 1;
+/* Flex Container */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
 }
+/* Flex Item */
+
 
 h1 {
 	text-align: center;

@@ -1,50 +1,43 @@
-
-.flex-start {
-	justify-content: flex-start;
-}
-
-.flex-end {
-	justify-content: flex-end;
-}
-
-.center {
-	justify-content: center;
-}
-
-.space-between {
-	justify-content: space-between;
-}
-
-.space-around {
-	justify-content: space-around;
-}
-
-/* Flex Container */
-.container {
-	max-width: 420px;
-	margin: 0 auto;
+body{
+    width: 99%;
+    height: 98vh;
+	text-align: center;
 	display: flex;
-	border: 1px solid #ccc;
-}
-
-.column {
-	min-height: 200px;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* Os itens não se expandem para ocupar o container. */
+.grow0 {
+	flex-grow: 0;
 }
 
-/* Flex Item */
+/* Os itens se expandem igualmente para ocupar o container. Utilizando apenas o flex-grow, o crescimento é distribuído igualmente antes e depois do conteúdo de cada elemento. (pois por padrão o flex-basis é auto) */
+.grow1 {
+	flex-grow: 1;
+}
+
+/* Os itens se expandem duas vezes mais que aqueles com flex-grow: 1; */
+.grow2 {
+	flex-grow: 2;
+}
+
 .item {
 	margin: 5px;
-	padding: 0 10px;
 	background: tomato;
 	text-align: center;
 	font-size: 1.5em;
 }
 
-/* Indica que o conteúdo deve se expandir */
-.flex {
-	flex: 1;
+/* Flex Container */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
 }
+/* Flex Item */
+
 
 h1 {
 	text-align: center;
